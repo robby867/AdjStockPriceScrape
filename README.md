@@ -4,7 +4,7 @@ To install the required dependancies, use the following command
 ```
 pip install -r requirements.txt
 ```
-Run main.py, and a GUI will pop up. 
+Run main.py, and a GUI will pop up
 
 Start date is the start of the date range (inclusive). If there isn't data going that far back, the earliest price date will be used
 
@@ -17,6 +17,8 @@ Ticker location is the path to the csv of the ticker names
 Save to is the path that the program will output the data
 
 Outputs a single excel wookbook, with tickers separated by worksheet. Dates will be in the first column, and adjusted close price in the second column. It will be saved in the specified file path.
+
+An ExampleTickers.csv is included to try out the program.
 ## Background
 A family member needed to get historical adjusted close prices for calculating returns on securities. Downloading the csv files by hand took too long, so they needed a way to quickly get data they could use for manipulation in excel. They needed this done within a day.
 ## This Project
