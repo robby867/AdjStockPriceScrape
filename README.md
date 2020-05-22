@@ -18,7 +18,7 @@ Save to is the path that the program will output the data
 
 Outputs a single excel wookbook, with tickers separated by worksheet. Dates will be in the first column, and adjusted close price in the second column. It will be saved in the specified file path.
 ## Background
-A family member needed to get historical adjusted close prices for calculating returns on securities. Downloading the csv files by hand took too long, so they needed a way to quickly get data they could use for manipulation in excel.
+A family member needed to get historical adjusted close prices for calculating returns on securities. Downloading the csv files by hand took too long, so they needed a way to quickly get data they could use for manipulation in excel. They needed this done within a day.
 ## This Project
 I quickly put together a program to retrieve adjusted close prices from Yahoo! Finance using pandas datareader, and then wrote the data to an excel workbook. The program takes in a csv file path of the tickers needed, start and end dates, the output file name, and the output file path. The program uses tkinter for a GUI to specify the input parameters, and validates user input. These inputs get sent to pandas datareader, which returns a dataframe of the necessary data. This data is parsed, and then written to an excel workbook. The workbook separates each ticker by worksheet, with the dates in the first column and adjusted close prices in the second. 
 
