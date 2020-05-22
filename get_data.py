@@ -72,7 +72,7 @@ class GetData(object):
             # Write adj close data
             for index, row in df.iterrows():
                 worksheet.write_datetime(xslxRow, 0, index, date_format)
-                worksheet.write_number(xslxRow, 1, row["Adj Close"])
+                worksheet.write_number(xslxRow, 1, round(row["Adj Close"], 6))
                 xslxRow += 1
         
         # Close the workbook and save errors
