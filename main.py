@@ -5,6 +5,7 @@
    and simplifies data retrieval
 """
 
+import tkinter.filedialog
 import tkinter as tk
 import os
 from datetime import datetime
@@ -16,7 +17,7 @@ __status__ = "Prototype"
 
 # Set up GUI
 root = tk.Tk()
-root.geometry('500x460')
+root.geometry('500x380')
 SPAN_WIDTH = 2
 ENTRY_WIDTH = 23
 FILE_WIDTH = 50
@@ -102,7 +103,7 @@ def getData():
 
 
 # Labels for input boxes
-labels = ["Start Date (mm/dd/yyyy)", "End Date (mm/dd/yyyy)", "File Name", "Tickers Location (csv)"]
+labels = ["Start Date (mm/dd/yyyy)", "End Date (mm/dd/yyyy)", "File Name", "Ticker Location (csv)"]
 for i in range(len(labels)):
     tk.Label(root, text=labels[i]).grid(row=i*2, sticky="W")
 tk.Label(root, text="Save to").grid(row=9, sticky="W")
